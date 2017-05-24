@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Config/etc/system_file.xsd">
+    <system>
+        <!-- for add new tab in Magento2 system configuration section -->
+        <tab id="admintab" translate="label" sortOrder="10">
+             <label>KTPL Tab</label>
+        </tab>
+        <!-- for create section -->
+        <section id="admintab" translate="label" type="text" sortOrder="320" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>KTPL Tab</label>
+            <!-- Assign section to tab -->
+            <tab>admintab</tab>
+            <resource>Krish_Admintab::configuration</resource>
+            <!-- create group for fields in section -->
+            <group id="admintab" translate="label" type="text" delault="1" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>KTPL Tab</label>
+                <!-- create text type field -->
+                <field id="admintab" translate="label comment" sortOrder="7" type="text" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Name</label>                                   
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="KTPL_News::news" title="News" module="KTPL_News" sortOrder="30" resource="KTPL_News::news"/>
+        <add id="KTPL_News::news_manage" title="All News" module="KTPL_News" sortOrder="10" parent="KTPL_News::news" action="news/index/" resource="KTPL_News::manage"/>
+    </menu>
+</config>
